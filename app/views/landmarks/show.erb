@@ -4,8 +4,8 @@
     <th>Year Completed</th>
   </tr>
   <tr>
-    <td><%=Landmark.find_by(params[:id]).name%></td>
-    <td><%=Landmark.find_by(params[:id]).year_completed%></td>
+    <td><%=Landmark.find_by(@landmark.id).name%></td>
+    <td><%=Landmark.find_by(@landmark.id).year_completed%></td>
   </tr>
 <table>
 

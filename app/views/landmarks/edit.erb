@@ -1,6 +1,11 @@
 <h2>Edit Historical Landmark</h2>
 
-
+<form method="POST" action="/landmarks/<%=@landmark.id%>">
+    <form type="hidden" method="" action="_method">
+        <input type="text" name="name" placeholder="<%=@landmark.name%>">
+        <input type="text" name="date_completed" placeholder="<%=@landmark.date_completed%>">
+    </form>
+</form>
 
 <a class="button" href="/figures">Show All Landmarks</a>
 <break>
