@@ -13,11 +13,11 @@ class LandmarksController < ApplicationController
     redirect "landmarks/#{@landmark.id}"
   end
   get '/landmarks/:id/edit'  do
-    @landmark=Landmark.find_by(param[:id])
+    @landmark=Landmark.find(param[:id])
     erb :edit
   end
   get '/landmarks/:id' do
-    @landmark=Landmark.find_by(params[:id])
+    @landmark=Landmark.find(params[:id])
     erb :show
   end
 end
